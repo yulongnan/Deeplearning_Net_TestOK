@@ -16,7 +16,15 @@ BACKBONE:
 DATASETS:  
     TRAIN: ("voc_2007_train", ) #修改==3==数据集txtname  
     TEST: ("voc_2007_test", )   
-    
+1-0==预训练权重是否使用  
+‘\ssd\config\defaults.py’   
+_C.MODEL.BACKBONE.PRETRAINED = True  
+对于‘configs\mobilenet_v3_ssd320_voc0712.yaml’  
+BACKBONE:  
+    NAME: 'mobilenet_v3'  
+    OUT_CHANNELS: (112, 960, 512, 256, 256, 64)  
+    PRETRAINED: False  #修改==2==不要预训练  
+
 2==ssd\data\datasets\voc.py   
 class_names = ( '__background__', "no", "owf", "of", "fcc", "ob" )  
  #类别小写  
