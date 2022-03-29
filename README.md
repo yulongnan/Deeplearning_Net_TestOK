@@ -41,3 +41,7 @@ F:\F_Test_Vscode_Three\SSD-master\ssd\utils\nms.py
 去掉torchvision版本检查 #7~11  
 _nms = torchvision.ops.nms  
 
+5==训练自定义出现loss为nan值问题  
+‘configs\vgg_ssd512_voc0712.yaml’  
+修改LR=1e-4  
+
