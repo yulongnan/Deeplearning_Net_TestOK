@@ -3,10 +3,10 @@
 #SSD https://github.com/lufficc/SSD
 
 1=代码
-https://github.com/lufficc/SSD
+&ensp;https://github.com/lufficc/SSD
 
 2=自定义修改
-1=cfg定义
+&ensp;1=cfg定义
 ‘configs\mobilenet_v3_ssd320_voc0712.yaml’
 NUM_CLASSES: 6 #修改==1==类别数+1（背景）
 BACKBONE:
