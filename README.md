@@ -9,15 +9,15 @@
 
 1=cfg定义
 
-‘configs\mobilenet_v3_ssd320_voc0712.yaml’
-NUM_CLASSES: 6 #修改==1==类别数+1（背景）
-BACKBONE:
-    NAME: 'mobilenet_v3'
-    OUT_CHANNELS: (112, 960, 512, 256, 256, 64)
-    PRETRAINED: False  #修改==2==不要预训练
-DATASETS:
-  TRAIN: ("voc_2007_train", ) #修改==3==数据集txtname
-  TEST: ("voc_2007_test", )
+‘configs\mobilenet_v3_ssd320_voc0712.yaml’  
+NUM_CLASSES: 6 #修改==1==类别数+1（背景）  
+BACKBONE:  
+    NAME: 'mobilenet_v3'  
+    OUT_CHANNELS: (112, 960, 512, 256, 256, 64)  
+    PRETRAINED: False  #修改==2==不要预训练  
+DATASETS:  
+  TRAIN: ("voc_2007_train", ) #修改==3==数据集txtname  
+  TEST: ("voc_2007_test", )  
 
 
 2==ssd\data\datasets\voc.py 
